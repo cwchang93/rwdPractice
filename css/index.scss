@@ -1,0 +1,156 @@
+$classname: 'cssrwd';
+$inputWidth: '10rem';
+
+
+* {
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.#{$classname} {
+
+    // @media only screen and (min-width: 768px) {
+    //     .layout {
+    //         display: flex;
+
+    //     }
+
+    //     .leftPart {
+
+    //         margin-top: 170px;
+    //         margin-left: 125px;
+    //         padding: 4.8rem 0;
+    //     }
+
+    //     .rightPart {
+    //         margin-right: 160px;
+    //         margin-top: 120px;
+    //         padding-left: 0;
+    //     }
+    // }
+
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./background_0222.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    .layout {
+        width: 100%;
+
+    }
+
+
+
+    .leftPart {
+        * {
+            margin: 1rem;
+        }
+
+        color: white;
+        padding: 4.8rem;
+        // border: solid red 1px;
+
+        .title {
+            top: 0px;
+            font-size: 2rem;
+        }
+
+        .slogan {
+            font-size: 2.5rem;
+        }
+
+        .content {
+            font-size: 1.2rem;
+            // max-width: 7rem;
+        }
+
+
+        .startBtn {
+            font-size: 1rem;
+            border: 0;
+            background: red;
+            padding: 8px 5px;
+            color: white;
+            width: 10rem;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+
+    }
+
+    .rightPart {
+        padding: 4.8rem;
+
+
+        .form {
+            // border: solid blue 1px;
+            border-bottom: solid red 3px;
+            background: white;
+            width: 24rem;
+            margin: 1.6rem calc((100% - 24rem)/2);
+        }
+
+        .formTitle {
+            font-size: 1.6rem;
+            text-align: center;
+            font-weight: bold;
+            padding: 1.6rem;
+        }
+
+        textarea,
+        input {
+            width: 16rem;
+
+            margin: 0.5rem calc((100% - 16rem)/2)
+        }
+
+
+        form {
+            width: auto;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 1rem;
+            border: 0;
+            background: red;
+            color: white;
+            width: 16rem;
+
+            margin: 0.5rem calc((100% - 16rem)/2)
+        }
+
+    }
+
+
+    @media only screen and (min-width: 768px) {
+        .layout {
+            display: flex;
+
+        }
+
+        .leftPart {
+
+            margin-top: 170px;
+            margin-left: 125px;
+            padding: 4.8rem 0;
+        }
+
+        .rightPart {
+            margin-right: 160px;
+            margin-top: 120px;
+            padding-left: 0;
+        }
+    }
+
+
+}
