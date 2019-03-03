@@ -3,13 +3,14 @@ $inputWidth: '10rem';
 
 
 * {
-    font-family: serif;
+    // font-family: serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 80%; //80%  => 12.8px
 }
 
 .#{$classname} {
@@ -56,20 +57,21 @@ html {
         }
 
         color: white;
-        padding: 4.8rem;
+        // padding: 4.8rem;
         // border: solid red 1px;
 
         .title {
             top: 0px;
-            font-size: 2rem;
+            font-size: 2.15rem;
         }
 
         .slogan {
-            font-size: 2.5rem;
+            font-size: 3.4rem;
+            letter-spacing: 1px
         }
 
         .content {
-            font-size: 1.2rem;
+            font-size: 1.23rem;
             // max-width: 7rem;
         }
 
@@ -82,13 +84,14 @@ html {
             color: white;
             width: 10rem;
             text-transform: uppercase;
-            border-radius: 5px;
+            border-radius: 3px;
+            font-weight: bold;
         }
 
     }
 
     .rightPart {
-        padding: 4.8rem;
+        // padding: 4.8rem;
 
 
         .form {
@@ -131,8 +134,11 @@ html {
 
     }
 
+    // PC
+    @media only screen and (min-width: 980px) {
 
-    @media only screen and (min-width: 768px) {
+        // background-size: contain;
+
         .layout {
             display: flex;
 
@@ -141,7 +147,7 @@ html {
         .leftPart {
 
             margin-top: 170px;
-            margin-left: 125px;
+            margin-left: 170px;
             padding: 4.8rem 0;
         }
 
