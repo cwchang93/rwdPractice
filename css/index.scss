@@ -96,9 +96,9 @@ html {
 
         .form {
             // border: solid blue 1px;
-            border-bottom: solid red 3px;
+            border-bottom: solid red 5px;
             background: white;
-            width: 24rem;
+            width: 20rem;
             margin: 1.6rem calc((100% - 24rem)/2);
         }
 
@@ -112,14 +112,23 @@ html {
         textarea,
         input {
             width: 16rem;
+            height: 2rem;
+            margin: 0.6rem calc((100% - 16rem)/2);
+            opacity: 0.5;
+            font-weight: 500;
 
-            margin: 0.5rem calc((100% - 16rem)/2)
+            &::placeholder {
+                // color: red
+            }
         }
 
+        textarea {
+            height: 4rem;
+        }
 
         form {
             width: auto;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .btn {
@@ -128,8 +137,8 @@ html {
             background: red;
             color: white;
             width: 16rem;
-
-            margin: 0.5rem calc((100% - 16rem)/2)
+            border-radius: 2px;
+            margin: 0.15rem calc((100% - 16rem)/2)
         }
 
     }
@@ -147,13 +156,14 @@ html {
         .leftPart {
 
             margin-top: 170px;
-            margin-left: 170px;
+            margin-left: 200px;
+            margin-right: 12px;
             padding: 4.8rem 0;
         }
 
         .rightPart {
-            margin-right: 160px;
-            margin-top: 120px;
+            margin-right: 230px;
+            margin-top: 160px;
             padding-left: 0;
         }
     }
