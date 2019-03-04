@@ -15,39 +15,16 @@ html {
 
 .#{$classname} {
 
-    // @media only screen and (min-width: 768px) {
-    //     .layout {
-    //         display: flex;
-
-    //     }
-
-    //     .leftPart {
-
-    //         margin-top: 170px;
-    //         margin-left: 125px;
-    //         padding: 4.8rem 0;
-    //     }
-
-    //     .rightPart {
-    //         margin-right: 160px;
-    //         margin-top: 120px;
-    //         padding-left: 0;
-    //     }
-    // }
-
     min-height: 100vh;
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     background-image: url(./background_0222.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
 
-    .layout {
-        width: 100%;
-
-    }
+    .layout {}
 
 
 
@@ -56,9 +33,11 @@ html {
             margin: 1rem;
         }
 
+        padding-top: 10px;
+        width: 60%;
+        text-align: center;
+        margin: auto;
         color: white;
-        // padding: 4.8rem;
-        // border: solid red 1px;
 
         .title {
             top: 0px;
@@ -77,12 +56,14 @@ html {
 
 
         .startBtn {
+            display: block;
+            margin: auto;
             font-size: 1rem;
             border: 0;
             background: red;
-            padding: 8px 5px;
+            padding: 1rem;
             color: white;
-            width: 10rem;
+            width: 16rem;
             text-transform: uppercase;
             border-radius: 3px;
             font-weight: bold;
@@ -92,14 +73,14 @@ html {
 
     .rightPart {
         // padding: 4.8rem;
-
+        margin-top: 20px;
 
         .form {
             // border: solid blue 1px;
+            width: 60%;
             border-bottom: solid red 5px;
             background: white;
-            width: 20rem;
-            margin: 1.6rem calc((100% - 24rem)/2);
+            margin: auto;
         }
 
         .formTitle {
@@ -111,11 +92,14 @@ html {
 
         textarea,
         input {
-            width: 16rem;
-            height: 2rem;
-            margin: 0.6rem calc((100% - 16rem)/2);
+            box-sizing: border-box;
+            width: calc(100% - 24px);
+            height: 2.5rem;
+            margin: 12px;
             opacity: 0.5;
             font-weight: 500;
+            padding: auto 6px;
+            padding-left: 10px;
 
             &::placeholder {
                 // color: red
@@ -124,21 +108,24 @@ html {
 
         textarea {
             height: 4rem;
+            margin-bottom: 2rem;
         }
 
         form {
             width: auto;
             margin-bottom: 1.5rem;
+
         }
 
         .btn {
             padding: 1rem;
+            margin: auto 12px;
             border: 0;
             background: red;
             color: white;
-            width: 16rem;
+            width: calc(100% - 24px);
             border-radius: 2px;
-            margin: 0.15rem calc((100% - 16rem)/2)
+            /* margin: 0.15rem calc((100% - 16rem)/2); */
         }
 
     }
@@ -150,21 +137,58 @@ html {
 
         .layout {
             display: flex;
-
+            padding-top: 160px;
+            padding-left: 200px;
+            padding-right: 150px;
         }
 
         .leftPart {
+            padding-top: 50px;
+            padding-right: 30px;
+            width: auto;
+            text-align: inherit;
+            margin-right: 20px;
 
-            margin-top: 170px;
-            margin-left: 200px;
-            margin-right: 12px;
-            padding: 4.8rem 0;
+            .startBtn {
+                margin: 12px;
+            }
+
         }
 
+
+
         .rightPart {
-            margin-right: 230px;
-            margin-top: 160px;
-            padding-left: 0;
+
+            .form {
+                width: 20rem;
+            }
+
+            input,
+            textarea {
+                box-sizing: border-box;
+                padding-left: 10px;
+                display: block;
+                width: 16rem;
+                margin: 1rem 2rem;
+                height: 2rem;
+                opacity: 0.5;
+                font-weight: 500;
+
+                &::placeholder {
+                    // color: red
+                }
+            }
+
+            textarea {
+                height: 4rem;
+                // width: 16rem;
+            }
+
+            .btn {
+                width: 16rem;
+                margin: auto 2rem;
+            }
+
         }
     }
 
